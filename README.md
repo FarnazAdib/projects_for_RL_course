@@ -7,7 +7,7 @@ In the first project, we implement a couple of basic tabular algorithms from the
 
 R. Sutton and A. Barto, [“Reinforcement learning: An introduction”](http://incompleteideas.net/book/the-book-2nd.html), MIT press, 2018.
 
- on [the Blackjack environment provided by OpenAI Gymnasium.](https://gymnasium.farama.org/environments/toy_text/blackjack/) Complete the code by replacing \verb|None| with code in the blocks denoted by ``start your code here'' and ``end your code here''.
+ on [the Blackjack environment provided by OpenAI Gymnasium.](https://gymnasium.farama.org/environments/toy_text/blackjack/) Complete the code by replacing ``None`` with code in the blocks denoted by ``start your code here`` and ``end your code here``.
 
 *  Q-leaning algorithm on page 131 of the book. 
 * sarsa algorithm on page 130 of the book. 
@@ -16,7 +16,7 @@ R. Sutton and A. Barto, [“Reinforcement learning: An introduction”](http://i
 * on-policy first-visit MC control on page 101 of the book. 
 
 ### Running on local computer
-* Go to [https://github.com/FarnazAdib/Crash_course_on_RL.git] and clone the project.
+* Go to [https://github.com/FarnazAdib/projects_for_RL_course.git] and clone the project.
 * Open PyCharm. From PyCharm. Click File and open project. Then, navigate to the project folder.
 * Build a virtual environment and import required libraries.
 
