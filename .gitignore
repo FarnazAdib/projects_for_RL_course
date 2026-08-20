@@ -3,6 +3,21 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Solution files (kept private, not distributed to students)
+_solution_*.py
+
+# Generated artifacts (plots, saved models, logs)
+*.png
+*.jpg
+*.gif
+*.mp4
+*.pth
+*.pt
+*.ckpt
+runs/
+logs/
+checkpoints/
+
 # C extensions
 *.so
 

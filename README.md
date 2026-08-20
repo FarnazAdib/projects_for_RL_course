@@ -4,8 +4,20 @@ This is a self-contained repository for source codes for the project for [the Ph
 
 ## Running on local computer
 * Go to [https://github.com/FarnazAdib/projects_for_RL_course.git] and clone the project.
-* Open PyCharm. From PyCharm. Click File and open project. Then, navigate to the project folder.
-* Build a virtual environment and import required libraries.
+* Open the project in your preferred editor or IDE.
+* Create the project virtual environment and install all required libraries by running
+
+```
+python3 utilities.py
+```
+This creates a local `.venv` folder and installs the packages listed in [requirements.txt](requirements.txt).
+* Run the scripts with the virtual-environment interpreter, for example
+
+```
+.venv/bin/python q_blackjack.py
+```
+
+If your machine has multiple Python versions installed, `utilities.py` prefers Python 3.10, 3.11, or 3.12 so that the pinned package versions install correctly.
 
 
 ## Project 1: Implementing basic tabular approaches on Blackjack
@@ -44,6 +56,21 @@ The purpose of this project is to implement Deep Deterministic Policy Gradient (
  * [DDPG algorithm](DDPG.py)
  * [SAC algorithm](SAC.py)
 
+## Project 4: Implementing on-policy actor-critic methods (TRPO and PPO) on inverted pendulum
+The purpose of this project is to implement the on-policy actor-critic methods Trust Region Policy Optimization (TRPO) and Proximal Policy Optimization (PPO) on inverted pendulum given in the following papers:
 
+* John Schulman, Sergey Levine, Philipp Moritz, Michael I. Jordan, Pieter Abbeel, ["Trust Region Policy Optimization",](https://arxiv.org/pdf/1502.05477.pdf) In International Conference on Machine Learning, pp. 1889-1897, 2015.
 
+* John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov, ["Proximal Policy Optimization Algorithms",](https://arxiv.org/pdf/1707.06347.pdf) arXiv preprint arXiv:1707.06347, 2017.
 
+ on [the inverted pendulum provided by OpenAI Gymnasium.](https://gymnasium.farama.org/environments/classic_control/pendulum/) Complete the code by replacing ``None`` with code in the blocks denoted by ``start your code here`` and ``end your code here``. Both algorithms share the on-policy rollout buffer with Generalized Advantage Estimation (GAE) and the running observation normalizer provided in [utilities.py](utilities.py). The files for this project are
+
+ * [TRPO algorithm](TRPO.py)
+ * [PPO algorithm](PPO.py)
+
+## Repository layout
+Besides the project files listed above, the repository contains a few shared helper modules:
+
+* [utilities.py](utilities.py) — shared components (`RunningNormalizer`, `RolloutBuffer`, `OUNoise`, `OUActionNoise`) and the requirements installer entry point.
+* [plotting.py](plotting.py) — helper functions for plotting scores and losses.
+* [requirements.txt](requirements.txt) — list of required Python libraries installed into the local virtual environment.
