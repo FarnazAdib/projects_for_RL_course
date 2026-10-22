@@ -68,6 +68,15 @@ The purpose of this project is to implement the on-policy actor-critic methods T
  * [TRPO algorithm](TRPO.py)
  * [PPO algorithm](PPO.py)
 
+## Project 5: Implementing Soft Q-Learning (SQL) on inverted pendulum
+The purpose of this project is to implement Soft Q-Learning, a maximum-entropy Q-learning method with energy-based policies, given in the following paper:
+
+* Tuomas Haarnoja, Haoran Tang, Pieter Abbeel, and Sergey Levine. ["Reinforcement Learning with Deep Energy-Based Policies",](http://proceedings.mlr.press/v70/haarnoja17a/haarnoja17a.pdf) In International Conference on Machine Learning, pp. 1352-1361, 2017.
+
+ on [the inverted pendulum provided by OpenAI Gymnasium.](https://gymnasium.farama.org/environments/classic_control/pendulum/) The soft value function is estimated by importance sampling with a uniform proposal, and the policy is an amortized sampling network trained with Stein Variational Gradient Descent (SVGD). Complete the code by replacing ``None`` with code in the blocks denoted by ``start your code here`` and ``end your code here``. The file for this project is
+
+ * [SQL algorithm](SQL.py)
+
 ## Repository layout
 Besides the project files listed above, the repository contains a few shared helper modules:
 
