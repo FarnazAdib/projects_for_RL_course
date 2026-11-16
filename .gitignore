@@ -4,7 +4,10 @@ __pycache__/
 *$py.class
 
 # Solution files (kept private, not distributed to students)
-_solution_*.py
+_solution_*
+
+# macOS
+.DS_Store
 
 # Generated artifacts (plots, saved models, logs)
 *.png
